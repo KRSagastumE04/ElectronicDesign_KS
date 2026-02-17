@@ -1,0 +1,7 @@
+../Src/Reloj_Alarma_P1_KS.c:84:16:decoder	16	static
+../Src/Reloj_Alarma_P1_KS.c:102:13:delay_ms	24	static
+../Src/Reloj_Alarma_P1_KS.c:110:16:button_pressed_event	16	static
+../Src/Reloj_Alarma_P1_KS.c:128:16:keypad_any_row_pressed	16	static
+../Src/Reloj_Alarma_P1_KS.c:137:13:keypad_getkey_press_release_4x4	24	static
+../Src/Reloj_Alarma_P1_KS.c:172:13:buzzer_tone_1s_2400Hz	16	static
+../Src/Reloj_Alarma_P1_KS.c:188:6:Reloj_Alarma_P1_KS	72	static

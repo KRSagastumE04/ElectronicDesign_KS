@@ -1,0 +1,5 @@
+"./Src/Reloj_Alarma_P1_KS.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32l053r8tx.o"
