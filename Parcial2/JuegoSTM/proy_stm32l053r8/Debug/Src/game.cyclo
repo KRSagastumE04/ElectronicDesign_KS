@@ -1,0 +1,7 @@
+../Src/game.c:10:6:game_init	1
+../Src/game.c:12:6:game_reset	1
+../Src/game.c:20:6:game_button_start	3
+../Src/game.c:29:6:game_button_pressed	3
+../Src/game.c:40:6:game_fsm_update	21
+../Src/game.c:67:13:game_move_str	7
+../Src/game.c:75:13:game_result_str	5

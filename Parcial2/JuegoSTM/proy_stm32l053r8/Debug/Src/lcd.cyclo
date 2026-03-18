@@ -1,0 +1,15 @@
+../Src/lcd.c:17:13:delayMs	2
+../Src/lcd.c:21:13:lcd_set_rs	2
+../Src/lcd.c:26:13:lcd_set_en	2
+../Src/lcd.c:31:13:lcd_pulse_en	3
+../Src/lcd.c:38:13:lcd_write_nibble	5
+../Src/lcd.c:54:13:lcd_send	3
+../Src/lcd.c:62:13:lcd_cmd	1
+../Src/lcd.c:66:13:lcd_data	1
+../Src/lcd.c:70:6:lcd_init	3
+../Src/lcd.c:104:6:lcd_clear	1
+../Src/lcd.c:109:6:lcd_set_cursor	2
+../Src/lcd.c:114:6:lcd_print	2
+../Src/lcd.c:120:6:lcd_print_line	4
+../Src/lcd.c:134:6:lcd_queue_update	7
+../Src/lcd.c:148:6:lcd_tick	7

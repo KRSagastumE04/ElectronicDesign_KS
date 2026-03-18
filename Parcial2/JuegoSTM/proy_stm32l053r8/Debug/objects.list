@@ -1,0 +1,6 @@
+"./Src/Parcial2_SD.o"
+"./Src/game.o"
+"./Src/lcd.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32l053r8tx.o"
