@@ -1,0 +1,31 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Unplaced Symbol Availability Check                               )
+(                                                                     )
+(    Drawing          : kit_stm32.brd                                 )
+(    Software Version : 25.1S010                                      )
+(    Date/Time        : Thu May  7 22:53:42 2026                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Current PSMPATH consists of:
+	.
+	symbols
+	..
+	../symbols
+	C:/Cadence/OrCADX_24.1/share/local/pcb/symbols
+	C:/Cadence/OrCADX_24.1/share/pcb/pcb_lib/symbols
+	C:/Cadence/OrCADX_24.1/share/pcb/allegrolib/symbols
+	C:/candencecircuits/cad_library
+	C:/Users/rocio/AppData/Roaming/SPB_Data/cdssetup/OrCAD_Capture/25.1.0/downloaded_parts/allegropcb
+	C:/OrCAD_Libraries/
+	C:/Cadence_2026/cad_library
+
+
+All Symbols Found
+
+Total symbols placed:      372 out of 373
+
+
+Symbol Found:  LCD2	- C:/Cadence_2026/cad_library/lcd.psm

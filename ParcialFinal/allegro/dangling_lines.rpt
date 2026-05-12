@@ -1,0 +1,482 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dangling Line, Via and Antenna Report                            )
+(                                                                     )
+(    Drawing          : kit_stm32.brd                                 )
+(    Software Version : 25.1S010                                      )
+(    Date/Time        : Thu May  7 23:09:58 2026                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Report methodology:
+  - Dangling lines have at least one end not connected.
+  - Dangling vias have one or no connection
+      - Plus are not a test, thieving or netshort property via.
+  - Antenna vias do not have connections on their start and end layers.
+      - Plus they are not a thieving vias.
+      - Optionally, VOLTAGE nets, testvias and through vias can be suppressed with
+        the environment variable report_antennavia.
+      - Section may be suppressed by variable report_noantennavia.
+  - Not part of the current partition.
+  - To suppress items in dangle report add the OK_DANGLE property to the via
+    or connect line.
+
+<< Dangling Lines >>  - Location marked with a star (*) is dangling.
+  Net                 Layer                  Length       Location
+  ------------------------------------------------------------------------------------------
+  N3541384             INT1                  6.4972     *(-71.5499 -33.7617) to  (-71.5486 -40.2584)
+  N3541384             INT1                  4.5039      (-71.5486 -40.2584) to *(-76.0517 -40.2603)
+  N3787025             INT1                  4.4987     *(-76.0474 -33.7587) to  (-71.5499 -33.7617)
+  N3913419             INT1                  6.5034     *(-76.0474 -33.7587) to  (-76.0517 -40.2603)
+  N3317002             TOP                   0.8196     *(-46.9890 -14.9410) to  (-47.8086 -14.9410)
+  N29596               TOP                   0.0153     *(-73.2739 31.7825) to  (-73.2631 31.7933)
+  GND_SIGNAL           INT1                  2.9019     *(-71.5499 -33.7617) to  (-71.5499 -30.8598)
+  GND_SIGNAL           INT1                  4.2479     *(-53.6501 -34.5085) to  (-56.6538 -31.5048)
+  GND_SIGNAL           INT1                  2.2577     *(-71.5486 -40.2584) to  (-69.9522 -41.8548)
+  GND_SIGNAL           INT1                  2.6937      (-58.8534 -44.7576) to *(-60.7581 -46.6623)
+  GND_SIGNAL           TOP                   1.5520      (-65.8550 44.5820) to *(-65.8550 46.1340)
+
+
+<< Dangling Vias >>
+  Net                  Padstack               Location            Layers
+  ---------------------------------------------------------------------------
+  +1V8                 VIA_KS               (-51.2237 -30.9340) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-51.1556 -32.9111) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-51.1556 -28.8716) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-50.2352 -29.9454) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-50.0477 -32.1100) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-40.9337 -0.7832) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-40.9337 -0.7832) TOP/BOTTOM 
+  +2V8                 VIA_KS               (-43.4851 -3.7044) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-71.1680 -9.1841) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-69.9288 -17.9675) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-69.2198 -4.4837) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-65.0768 -17.7313) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-55.1170 4.6519) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-53.6311 -18.2251) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-51.7744 -42.8113) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-44.1930 5.3720) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-33.5177 6.9169) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-33.5177 6.9169) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-32.3787 9.2093) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-31.0830 7.9687) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-23.8107 4.3434) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-21.9269 43.4112) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-21.9269 44.8511) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-20.8718 44.2068) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-19.8858 44.9419) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-19.3486 35.6698) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-14.2089 40.6313) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-1.3583 -28.9675) TOP/BOTTOM 
+  +3V3                 VIA_KS               (18.7666 -5.6586) TOP/BOTTOM 
+  +3V3                 VIA_KS               (18.8343 1.4668) TOP/BOTTOM 
+  +3V3                 VIA_KS               (19.0920 9.0024) TOP/BOTTOM 
+  +3V3                 VIA_KS               (22.5350 -31.7318) TOP/BOTTOM 
+  +3V3                 VIA_KS               (31.7900 -31.7276) TOP/BOTTOM 
+  +3V3                 VIA_KS               (65.7102 -38.0385) TOP/BOTTOM 
+  +3V3                 VIA_KS               (70.0538 -26.5647) TOP/BOTTOM 
+  +3V3                 VIA_KS               (71.6593 -18.2752) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-72.7572 16.6260) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-69.1477 32.5290) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-65.8744 16.5300) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-60.3490 47.9156) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-51.9282 33.5419) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-43.9362 25.7184) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-42.2553 28.3098) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-49.5279 -8.8535) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-49.0308 -24.1062) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-49.0308 -22.8868) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-48.1480 -26.4082) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-26.4914 16.2902) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-25.4082 17.2135) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-25.3466 0.8275) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-24.3250 16.1126) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-23.3484 17.5687) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-22.6558 16.3079) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.9156 16.3790) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.7204 30.2652) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.5073 28.8623) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.5073 28.8623) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-19.5661 29.6081) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-19.3861 19.6257) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-77.5580 30.2409) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-76.3271 37.4035) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-74.3565 33.7034) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-65.6550 37.4124) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-61.3929 35.0511) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-42.2510 40.6209) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-36.4773 28.6418) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-33.9052 33.0665) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-33.8339 34.4328) TOP/BOTTOM 
+
+
+<< Antenna Vias >>
+  Net                  Padstack               Location            Layers
+  ---------------------------------------------------------------------------
+  +1V8                 VIA_KS               (-51.2237 -30.9340) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-51.1556 -32.9111) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-51.1556 -28.8716) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-50.2352 -29.9454) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-50.0477 -32.1100) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-43.2249 -27.8516) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-43.1258 -10.8371) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-42.4630 -23.5880) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-42.2162 -7.2381) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-41.6160 -2.0460) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-40.9337 -0.7832) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-40.9337 -0.7832) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-30.9485 -36.2712) TOP/BOTTOM 
+  +1V8                 VIA_KS               (-23.6287 -2.8690) TOP/BOTTOM 
+  +2V8                 VIA_KS               (-49.1081 -6.7037) TOP/BOTTOM 
+  +2V8                 VIA_KS               (-46.1310 -35.1495) TOP/BOTTOM 
+  +2V8                 VIA_KS               (-43.4851 -3.7044) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-71.1680 -9.1841) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-69.9288 -17.9675) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-69.2198 -4.4837) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-65.0768 -17.7313) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-55.1170 4.6519) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-53.7534 -16.8041) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-53.6311 -18.2251) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-52.7599 -41.4054) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-51.7744 -42.8113) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-44.1930 5.3720) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-33.5177 6.9169) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-33.5177 6.9169) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-32.3787 9.2093) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-31.0830 7.9687) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-26.6468 6.9455) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-23.8107 4.3434) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-21.9269 43.4112) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-21.9269 44.8511) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-20.8718 44.2068) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-19.8858 44.9419) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-19.3486 35.6698) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-14.2089 40.6313) TOP/BOTTOM 
+  +3V3                 VIA_KS               (-1.3583 -28.9675) TOP/BOTTOM 
+  +3V3                 VIA_KS               (18.7666 -5.6586) TOP/BOTTOM 
+  +3V3                 VIA_KS               (18.8343 1.4668) TOP/BOTTOM 
+  +3V3                 VIA_KS               (19.0920 9.0024) TOP/BOTTOM 
+  +3V3                 VIA_KS               (22.5350 -31.7318) TOP/BOTTOM 
+  +3V3                 VIA_KS               (31.7900 -31.7276) TOP/BOTTOM 
+  +3V3                 VIA_KS               (65.7102 -38.0385) TOP/BOTTOM 
+  +3V3                 VIA_KS               (70.0538 -26.5647) TOP/BOTTOM 
+  +3V3                 VIA_KS               (71.6593 -18.2752) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-72.7572 16.6260) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-69.1477 32.5290) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-65.8744 16.5300) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-60.3490 47.9156) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-51.9282 33.5419) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-43.9362 25.7184) TOP/BOTTOM 
+  +3V3_ST_LINK         VIA_KS               (-42.2553 28.3098) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-49.5279 -8.8535) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-49.0308 -24.1062) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-49.0308 -22.8868) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-48.1480 -26.4082) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-26.4914 16.2902) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-25.4082 17.2135) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-25.3466 0.8275) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-24.3250 16.1126) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-23.3484 17.5687) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-22.6558 16.3079) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.9156 16.3790) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.7204 30.2652) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.5073 28.8623) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-20.5073 28.8623) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-19.5661 29.6081) TOP/BOTTOM 
+  +4V2                 VIA_KS               (-19.3861 19.6257) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-77.5580 30.2409) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-76.3271 37.4035) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-74.3565 33.7034) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-65.6550 37.4124) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-61.3929 35.0511) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-42.2510 40.6209) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-36.4773 28.6418) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-33.9052 33.0665) TOP/BOTTOM 
+  +5V_USB_CHG          VIA_KS               (-33.8339 34.4328) TOP/BOTTOM 
+  B1_PC1               VIA_KS               (18.3695 -14.8920) TOP/BOTTOM 
+  B1_PC1               VIA_KS               (39.7673 -3.2140) TOP/BOTTOM 
+  B1_PC5               VIA_KS               (14.4709 -9.3556) TOP/BOTTOM 
+  B1_PC5               VIA_KS               (35.7085 -8.8393) TOP/BOTTOM 
+  B1_PC5               VIA_KS               (39.3045 -8.0204) TOP/BOTTOM 
+  B1_PC5               VIA_KS               (56.9283 -8.6257) TOP/BOTTOM 
+  B1_PC6               VIA_KS               (24.0306 -10.1477) TOP/BOTTOM 
+  B1_PC6               VIA_KS               (48.1520 8.4819) TOP/BOTTOM 
+  B2_PC1               VIA_KS               (12.0765 -16.7523) TOP/BOTTOM 
+  B2_PC1               VIA_KS               (13.7973 16.1301) TOP/BOTTOM 
+  B2_PC2               VIA_KS               (23.8234 -18.5939) TOP/BOTTOM 
+  B2_PC2               VIA_KS               (62.1628 43.1621) TOP/BOTTOM 
+  B2_PC3               VIA_KS               (23.2205 -15.7286) TOP/BOTTOM 
+  B2_PC3               VIA_KS               (64.6365 39.8309) TOP/BOTTOM 
+  B2_PC4               VIA_KS               (14.2751 -8.2074) TOP/BOTTOM 
+  B2_PC4               VIA_KS               (68.5351 -20.2681) TOP/BOTTOM 
+  B2_PC5               VIA_KS               (13.6876 -10.0143) TOP/BOTTOM 
+  B2_PC5               VIA_KS               (69.6388 -19.3068) TOP/BOTTOM 
+  B2_SPI1_MISO         VIA_KS               (-62.0703 -24.3465) TOP/BOTTOM 
+  B2_SPI1_MISO         VIA_KS               (55.5747 -45.7214) TOP/BOTTOM 
+  B2_SPI1_MOSI         VIA_KS               (-59.0837 -21.6310) TOP/BOTTOM 
+  B2_SPI1_MOSI         VIA_KS               (59.9855 -44.2879) TOP/BOTTOM 
+  B2_SPI1_NSS          VIA_KS               (-66.0678 -22.1134) TOP/BOTTOM 
+  B2_SPI1_NSS          VIA_KS               (47.7083 -46.7966) TOP/BOTTOM 
+  B2_SPI1_SCK          VIA_KS               (-66.9454 -24.3382) TOP/BOTTOM 
+  B2_SPI1_SCK          VIA_KS               (51.7333 -46.8885) TOP/BOTTOM 
+  BT_USART4RX          VIA_KS               (-47.7734 3.3791) TOP/BOTTOM 
+  BT_USART4RX          VIA_KS               (-4.6411 -8.6443) TOP/BOTTOM 
+  BT_USART4TX          VIA_KS               (-46.9486 1.8708) TOP/BOTTOM 
+  BT_USART4TX          VIA_KS               (-4.4973 -7.6372) TOP/BOTTOM 
+  BUSY_XL1262          VIA_KS               (-52.0973 1.4633) TOP/BOTTOM 
+  BUSY_XL1262          VIA_KS               (-44.7459 1.2320) TOP/BOTTOM 
+  BUSY_XL1262          VIA_KS               (-3.8333 1.9424) TOP/BOTTOM 
+  BUSY_XL1262          VIA_KS               (3.0121 -8.7564) TOP/BOTTOM 
+  BUSY_XL1262          VIA_KS               (3.0210 -3.9886) TOP/BOTTOM 
+  COL_1                VIA_KS               (2.3729 3.4962)  TOP/BOTTOM 
+  COL_2                VIA_KS               (1.9202 2.6615)  TOP/BOTTOM 
+  COL_3                VIA_KS               (2.4795 1.7914)  TOP/BOTTOM 
+  COL_4                VIA_KS               (1.6538 1.4629)  TOP/BOTTOM 
+  DIO1_XL1262          VIA_KS               (-51.9816 2.5286) TOP/BOTTOM 
+  DIO1_XL1262          VIA_KS               (-45.3139 2.0670) TOP/BOTTOM 
+  DIO1_XL1262          VIA_KS               (-3.8688 3.0256) TOP/BOTTOM 
+  DIO1_XL1262          VIA_KS               (3.0565 -7.4689) TOP/BOTTOM 
+  DIO1_XL1262          VIA_KS               (3.5981 -2.7899) TOP/BOTTOM 
+  E5V                  VIA_KS               (-77.5790 25.3791) TOP/BOTTOM 
+  ENABLE / MK_OUT_5    VIA_KS               (-42.3308 -10.1503) TOP/BOTTOM 
+  ENABLE / MK_OUT_5    VIA_KS               (14.7059 -36.9633) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-77.1533 -29.9092) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-77.1532 -44.2654) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-75.4758 31.7933) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-74.9131 37.5423) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-74.6353 14.0960) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-74.0554 27.0790) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-73.8070 21.5306) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-73.5841 -44.3259) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-73.1675 44.5630) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-73.0322 -29.9263) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-72.5929 11.5510) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-72.5430 21.5499) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-71.9215 42.9752) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-71.1988 23.4888) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-70.9582 -1.9610) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-70.8986 -21.3890) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-70.7306 44.5851) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-70.2051 11.4500) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-69.4073 42.9641) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-68.6750 25.8564) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-68.5582 44.6402) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-67.9469 34.5713) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-67.5790 37.5357) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-67.3061 -20.8438) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-67.2870 25.9692) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-65.0790 -3.1700) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-63.4920 -24.5030) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-62.3880 36.6321) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-60.4299 30.6593) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-60.4116 29.7403) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-60.1009 24.1652) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-57.4280 4.8320) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-56.7966 43.7560) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-56.6340 -47.9481) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-56.2354 -1.1700) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-56.2240 23.6312) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-55.7440 -15.1700) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-55.2235 24.0584) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-54.8510 -21.7367) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-54.7447 32.2671) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-54.4045 29.1498) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-50.7845 -25.7426) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-50.2405 -35.6203) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-49.6680 34.9847) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-49.0510 -29.1651) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-48.0385 -22.4008) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-47.6133 38.0876) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-47.4180 30.5130) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-46.7008 -36.6133) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-46.6680 25.8262) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-46.5920 23.6160) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-46.5504 -3.0871) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-46.4738 14.8615) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-46.2892 -10.5716) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-45.1680 25.8173) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-44.9040 -33.2185) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-44.6114 -26.7266) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-44.5939 -29.5940) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-43.1930 0.7208) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-43.1599 -25.0880) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-42.9800 5.2164) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-42.6240 -1.2060) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-42.5468 25.4845) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-41.8781 34.1095) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-41.6150 -27.4648) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-41.1640 -32.8492) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-41.0546 -41.1051) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-40.4439 27.0583) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-39.3477 17.7108) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-38.8125 -37.5518) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-38.7262 29.9001) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-38.1490 0.7870) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-38.0688 -19.8317) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-37.8983 -14.0403) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-37.4506 -1.9060) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-36.6209 -20.8210) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-36.5853 -12.7813) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-36.5690 11.1877) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-36.5133 -15.1195) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-36.3955 -2.8573) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-35.8266 21.1860) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-35.7383 -1.8195) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-35.5172 18.9310) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-35.2183 -13.9684) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-35.0381 -19.8137) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-34.6590 11.6830) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-34.6313 -3.0130) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-34.1570 -17.6197) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-34.0755 8.1250) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-33.3842 27.2384) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-33.1796 -36.3509) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-32.9613 -37.6571) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-32.8251 5.9575) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-32.6821 -18.9147) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-32.6103 -16.5764) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-32.4995 1.8913) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-31.1569 0.4610) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-31.0634 -17.5837) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-31.0509 -2.8400) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-30.7100 4.7436) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-30.3387 -41.9353) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-30.3020 -43.2953) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-29.9662 -13.7525) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-29.8582 -19.9759) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-29.6150 -31.0822) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-29.4156 41.6925) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-28.7791 -12.5654) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-28.7611 -15.0296) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-28.7431 -20.7673) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-28.7378 26.5454) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-28.6813 -35.8073) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-28.5840 15.7870) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-27.5739 -19.9040) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-27.4480 -13.6626) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-26.8997 -36.1100) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-26.6150 -7.4391) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-26.6031 -37.6571) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-25.1718 35.5369) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-24.9585 36.7339) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-24.9480 45.9653) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-24.9141 29.5785) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-24.6567 20.4662) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-24.1944 21.8343) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-23.6219 -31.1546) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-23.4490 -35.8074) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-22.9457 -43.4194) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-22.9228 -41.9767) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-22.7139 -33.4204) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-22.6816 -23.5912) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-20.6724 5.8010) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-20.4826 -29.5806) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-19.0375 40.3041) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-17.9963 -2.0955) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-17.8112 -14.5940) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-17.7132 36.6795) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-17.1425 8.0010) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-16.9978 -15.5940) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-16.0490 -43.6079) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-16.0398 -42.2386) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-15.8205 -15.3352) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-15.1781 -6.7660) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-13.2823 11.2024) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-13.1493 -5.7087) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-9.3739 -1.3179) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-9.0205 1.3291) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-8.0637 -1.2789) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-5.4454 44.6353) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-4.7111 -46.8170) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (-2.7477 16.9370) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (4.0523 16.8926) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (6.1803 -28.8129) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (8.5479 12.0846) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (9.3351 2.8298)  TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (13.9051 -18.4290) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (13.9399 -12.7977) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (13.9680 1.4583) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (14.1021 14.0570) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (14.1158 7.7628) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (15.8484 -4.7609) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (18.9873 -43.3020) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (20.5042 -27.1280) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (23.0784 -43.3020) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (24.6646 4.8656) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (25.0739 -15.7564) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (25.2827 -8.6539) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (25.4132 -1.4143) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (29.8310 -47.9649) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (29.8366 -27.1420) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (30.5302 27.9571) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (33.8170 -47.8743) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (36.0168 -11.6354) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (36.7220 43.6543) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (37.8030 -47.9561) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (38.8768 9.7158) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (41.4306 -11.6440) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (41.8250 -47.9249) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (42.9414 -34.0750) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (45.7622 -47.7438) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (46.8820 43.8799) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (47.0845 -37.8679) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (49.5515 -9.2917) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (49.9321 -47.6965) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (53.7157 9.8225) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (53.8995 -47.6592) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (57.8477 -47.4957) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (59.7533 -23.4196) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (60.1605 9.8390) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (63.5170 -26.8030) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (64.3844 9.8390) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (70.6854 -38.0505) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (71.6526 -13.5590) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (71.7921 1.3870) TOP/BOTTOM 
+  GND_SIGNAL           VIA_KS               (74.8220 43.7117) TOP/BOTTOM 
+  I/O                  VIA_KS               (-27.0584 -33.3056) TOP/BOTTOM 
+  I/O                  VIA_KS               (-11.3979 -33.3768) TOP/BOTTOM 
+  IN_OE0               VIA_KS               (23.2028 -10.7619) TOP/BOTTOM 
+  IN_OE0               VIA_KS               (23.4475 0.1684) TOP/BOTTOM 
+  IN_OE0               VIA_KS               (23.4965 -7.4330) TOP/BOTTOM 
+  IN_OE0               VIA_KS               (25.5080 6.9555) TOP/BOTTOM 
+  IN_S0                VIA_KS               (17.1056 10.0129) TOP/BOTTOM 
+  IN_S0                VIA_KS               (18.9541 -4.6348) TOP/BOTTOM 
+  IN_S0                VIA_KS               (19.7858 1.8759) TOP/BOTTOM 
+  IN_S0                VIA_KS               (20.0162 -9.9253) TOP/BOTTOM 
+  IN_S0                VIA_KS               (20.5440 9.0392) TOP/BOTTOM 
+  IN_S0                VIA_KS               (67.8318 13.1726) TOP/BOTTOM 
+  N3541228             VIA_KS               (-51.1737 -38.3485) TOP/BOTTOM 
+  N3541228             VIA_KS               (-10.2610 -27.2325) TOP/BOTTOM 
+  N3541697             VIA_KS               (-51.0915 -37.0103) TOP/BOTTOM 
+  N3541697             VIA_KS               (-11.1137 -27.6056) TOP/BOTTOM 
+  N58845               VIA_KS               (5.5248 -4.6278) TOP/BOTTOM 
+  N58845               VIA_KS               (11.5981 0.8594) TOP/BOTTOM 
+  ROW_1                VIA_KS               (8.5518 -5.5638) TOP/BOTTOM 
+  ROW_2                VIA_KS               (7.9109 -6.6676) TOP/BOTTOM 
+  ROW_3                VIA_KS               (7.1098 -7.5488) TOP/BOTTOM 
+  ROW_4                VIA_KS               (5.9294 -7.7349) TOP/BOTTOM 
+  STM_USB_D_N          VIA_KS               (-63.8444 37.1488) TOP/BOTTOM 
+  STM_USB_D_N          VIA_KS               (-40.2000 32.5559) TOP/BOTTOM 
+  STM_USB_D_P          VIA_KS               (-60.6068 33.9389) TOP/BOTTOM 
+  STM_USB_D_P          VIA_KS               (-40.8724 33.1088) TOP/BOTTOM 
+  SW_0                 VIA_KS               (4.1753 4.1621)  TOP/BOTTOM 
+  SW_0                 VIA_KS               (16.5322 -24.5948) TOP/BOTTOM 
+  SW_1                 VIA_KS               (3.2785 3.9312)  TOP/BOTTOM 
+  SW_1                 VIA_KS               (25.1978 -24.6338) TOP/BOTTOM 
+  UART2RX              VIA_KS               (-51.6400 24.2351) TOP/BOTTOM 
+  UART2RX              VIA_KS               (-2.6992 -9.8140) TOP/BOTTOM 
+  UART2TX              VIA_KS               (-52.7729 26.5378) TOP/BOTTOM 
+  UART2TX              VIA_KS               (-3.7864 -9.3186) TOP/BOTTOM 
+  VCC                  VIA_KS               (-29.4212 -34.4952) TOP/BOTTOM 
+  VCC                  VIA_KS               (-11.2380 -37.2123) TOP/BOTTOM 
+  VIN_5V               VIA_KS               (-77.6080 22.7151) TOP/BOTTOM 
+  WIFI_USART3RX        VIA_KS               (-38.0689 7.8203) TOP/BOTTOM 
+  WIFI_USART3RX        VIA_KS               (8.6150 1.7651)  TOP/BOTTOM 
+  WIFI_USART3TX        VIA_KS               (-38.9392 8.5303) TOP/BOTTOM 
+  WIFI_USART3TX        VIA_KS               (8.3127 0.5398)  TOP/BOTTOM 
+
+<< Summary >>
+  Total dangling lines:      11
+  Total dangling vias:       68
+  Total antenna vias:       361

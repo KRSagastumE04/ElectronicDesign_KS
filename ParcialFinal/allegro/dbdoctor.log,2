@@ -1,0 +1,15 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : kit_stm32.brd                                 )
+(    Software Version : 25.1S010                                      )
+(    Date/Time        : Mon May 11 21:02:28 2026                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+WARNING:   WARNING(SPMHDB-42): Run batch DRC to regenerate DRC errs.
+
+1 warnings, 0 errors detected, 0 errors could be fixed.
