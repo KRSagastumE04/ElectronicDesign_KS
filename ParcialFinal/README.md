@@ -6,9 +6,9 @@
 ## Proyecto Final de Electrónica y Diseño Electrónico
 
 **Autor:** Káterin Sagastume  
-**Carrera:** Ingeniería en Electrónica y Telecomunicaciones[cite: 1]  
-**Institución:** Universidad del Istmo de Guatemala[cite: 1]  
-**Fecha:** Mayo de 2026[cite: 1]  
+**Carrera:** Ingeniería en Electrónica y Telecomunicaciones  
+**Institución:** Universidad del Istmo de Guatemala  
+**Fecha:** Mayo de 2026  
 
 <br>
 
@@ -23,9 +23,9 @@
   <img src="IMAGENES/TOPISOMETRICO_3D.png" width="80%" />
 </p>
 
-Este repositorio documenta el diseño integral de una tarjeta de desarrollo personalizada (HDK) basada en el microcontrolador **STM32G071RBT6**[cite: 1]. El sistema ha sido concebido para proporcionar una plataforma versátil de prototipado, integrando periféricos esenciales y siguiendo estándares industriales de diseño de hardware.
+Este repositorio documenta el diseño integral de una tarjeta de desarrollo personalizada (HDK) basada en el microcontrolador **STM32G071RBT6**. El sistema ha sido concebido para proporcionar una plataforma versátil de prototipado, integrando periféricos esenciales y siguiendo estándares industriales de diseño de hardware.
 
-El flujo de trabajo abarca desde la captura esquemática en **OrCAD Capture**[cite: 1] hasta el diseño físico (layout) en **Allegro PCB Editor**[cite: 1], culminando con la generación de archivos de fabricación y un análisis detallado de costos y materiales.
+El flujo de trabajo abarca desde la captura esquemática en **OrCAD Capture** hasta el diseño físico (layout) en **Allegro PCB Editor**, culminando con la generación de archivos de fabricación y un análisis detallado de costos y materiales.
 
 
 <br>
@@ -56,7 +56,7 @@ El flujo de trabajo abarca desde la captura esquemática en **OrCAD Capture**[ci
 
 | Característica | Detalle |
 | --- | --- |
-| **Microcontrolador** | STM32G071RBT6 (ARM Cortex-M0+)[cite: 1] |
+| **Microcontrolador** | STM32G071RBT6 (ARM Cortex-M0+) |
 | **Frecuencia de Reloj** | Hasta 64 MHz |
 | **Voltaje de Operación** | 3.3V DC (Regulación lineal integrada) |
 | **Capas de PCB** | 2 Capas (Fr4 - 1.6mm) |
